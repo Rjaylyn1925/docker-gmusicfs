@@ -8,6 +8,6 @@ echo "username = ${GOOGLE_USERNAME}" >> /root/.gmusicfs
 echo "password = ${GOOGLE_PASSWORD}" >> /root/.gmusicfs
 echo "deviceId = ${GOOGLE_DEVICE_ID}" >> /root/.gmusicfs
 
-gmusicfs /root/music
+gmusicfs /root/music -v --allusers
 
 rm /root/.gmusicfs

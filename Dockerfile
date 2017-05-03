@@ -14,4 +14,4 @@ ENV GOOGLE_PASSWORD ""
 ENV GOOGLE_DEVICE_ID ""
 WORKDIR /root
 RUN chmod 777 /etc/cont-init.d/40-launch
-RUN /etc/cont-init.d/40-launch
+CMD /etc/cont-init.d/40-launch

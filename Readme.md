@@ -1,3 +1,13 @@
+## NOTE:
+
+This doesn't actually work.  The docker image works to pull down the latest gmusicfs and launch it and all that junk,
+but the acutal GmusicFS app appears to be having issues right now, freaking out about broken indices and stuff.
+
+Probably, google changed their JSON again and the developers haven't fixed it.
+
+But, if they should ever get it fixed and working, well then, use this badboy.  You'll just need to update the git 
+address, I'm currently pulling the repo with the most recent commits.
+
 
 ## Usage
 
@@ -8,6 +18,7 @@ docker create \
   -v <path to mount music>:/root/music \
   -e GOOGLE_USERNAME=<username> -e GOOGLE_PASSWORD=<password>  \
   -e GOOGLE_DEVICE_ID=<deviceid> \
+  -e PYTHONUNBUFFERED=0
   digitalhigh/gmusicfs
 ```
 

@@ -7,8 +7,9 @@ RUN apt-get update && apt-get install -y \
 RUN pip install https://github.com/benklop/GMusicFS/tarball/master
 
 RUN mkdir -p /root/music
+COPY root/ /
 ADD mount.sh /root
-VOLUME ["/root/music"]
+VOLUME /root/music
 ENV GOOGLE_USERNAME ""
 ENV GOOGLE_PASSWORD ""
 ENV GOOGLE_DEVICE_ID ""

@@ -12,6 +12,7 @@ VOLUME /root/music
 ENV GOOGLE_USERNAME ""
 ENV GOOGLE_PASSWORD ""
 ENV GOOGLE_DEVICE_ID ""
+ENV PYTHONUNBUFFERED 0
 WORKDIR /root
 RUN chmod 777 /etc/cont-init.d/40-launch
 CMD /etc/cont-init.d/40-launch
